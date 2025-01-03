@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    min-height: 1000px;
+    background: #ffffff;
+    display: grid;
+    grid-template-columns: 1.5fr 2.5fr;
+    box-shadow: 0 35px 55px rgba(240, 239, 239, 1);
+}
+
+.container .left_Side {
+    position: relative;
+    background: #F0EFEF;
+    padding: 40px;
+}
+
+.profileText {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(50, 48, 48, 0.2);
+}
+
+.profileText .imgBx {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profileText .imgBx img {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profileText h2
+{
+    color: #000000;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+ 
+.profileText h2  span
+{
+   font-size: 0.8em;
+   font-weight: 300;
+
+}
+.ContactInfo
+{
+     padding-top:40px;
+
+  
+ }
+.title
+{
+     color: black;
+     text-transform: uppercase;
+     font-weight: 600;
+     letter-spacing: 1px;
+     margin-bottom: 20px;
+}
+
+.ContactInfo ul
+{
+    position: relative;
+}
+
+.ContactInfo ul li
+
+{
+    position: relative;
+     list-style: none;
+     margin: 10px 0 ;
+     cursor: pointer;
+}
+
+.ContactInfo ul li .icon
+{
+     display: inline-block;
+     width: 30px;
+     font-size: 18px;
+     color: #03a;
+}
+.ContactInfo ul li span 
+{
+     color: #000000;
+     font-weight: 300;
+}
+
+.ContactInfo.Education li
+{
+    margin-bottom: 15px;
+  
+}
+
+.ContactInfo.Education h5
+{
+    color: #03a;
+    font-weight: 500;
+}
+.ContactInfo.Education h4
+{
+     color: #000000;
+     font-weight: 500;
+}
+
+.ContactInfo.languages ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ContactInfo.languages ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.ContactInfo.languages .text {
+    font-size: 14px;
+    color: #000;
+    font-weight: 500;
+    flex: 0 0 80px;
+}
+
+.ContactInfo.languages .percent {
+    flex: 1;
+    height: 6px;
+    background: #e0e0e0;
+    margin-left: 10px;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+}
+
+.ContactInfo.languages .percent div {
+    height: 100%;
+    border-radius: 3px;
+}
+.ContactInfo.skills ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ContactInfo.skills ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.ContactInfo.skills ul li:last-child {
+    margin-bottom: 0;
+}
+
+
+
+.container .right_Side {
+    position: relative;
+    background: #fcfcfc;
+    padding: 40px;
+}
+
+.about
+{
+     margin-bottom: 50px;
+}
+.about:last-child
+{
+     margin-bottom: 0;
+}
+.title2
+{
+     color: black;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+     margin-bottom: 10px;
+}
+p
+{
+    color:#000;
+
+}
+.about.volunteer {
+    margin-bottom: 50px;
+}
+
+.about.volunteer p {
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.projects {
+    margin-bottom: 50px;
+}
+
+.projects h2 {
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    font-size: 1.5em; /* Make it the same size as the other headings */
+    font-weight: 600;
+}
+
+.projects ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.projects ul li {
+    margin-bottom: 20px;
+}
+
+.projects ul li h5 {
+    color: #0a3549; /* Matches the color theme */
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px; /* Space between the title and description */
+}
+
+.projects ul li p {
+    color: #333; /* Slightly darker for readability */
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.projects ul li p span {
+    display: block;
+    margin-top: 5px;
+    font-size: 13px;
+    color: #555; /* Subtle color for tool details */
+}
+
+.projects ul li:last-child {
+    margin-bottom: 0;
+}
+
+
+.about.skills ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.about.skills ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.about.skills .text {
+    font-size: 14px;
+    color: #000;
+    font-weight: 500;
+    flex: 0 0 80px;
+}
+
+.about.skills .percent {
+    flex: 1;
+    height: 6px;
+    background: #e0e0e0;
+    margin-left: 10px;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+}
+
+.about.skills .percent div {
+    height: 100%;
+    border-radius: 3px;
+}
+.about.certifications ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.about.certifications ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.about.certifications ul li:last-child {
+    margin-bottom: 0;
+}
+
+/* Your existing CSS code above */
+
+/* Start of print-specific styles */
+@media print {
+    /* Ensure the container is full-width for printing */
+    .container {
+        width: 100%;
+        display: block;
+        box-shadow: none;
+        background: #fff;
+    }
+
+    .container .left_Side, .container .right_Side {
+        page-break-inside: avoid;
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Profile Text Section */
+    .profileText {
+        padding-bottom: 10px;
+        border-bottom: none; /* Remove border for print */
+    }
+
+    .profileText h2 {
+        font-size: 1.5em; /* Increase size of the profile name for PDF */
+        text-align: center;
+    }
+
+    /* Contact Info Section */
+    .ContactInfo ul {
+        padding-left: 10px;
+    }
+
+    /* Language Skills Section */
+    .ContactInfo.languages ul li {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    .ContactInfo.languages .percent {
+        background: #e0e0e0;
+        margin-left: 10px;
+    }
+
+   
